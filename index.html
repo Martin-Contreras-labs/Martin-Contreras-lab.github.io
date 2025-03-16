@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="imagenes">
+        <img src="imagenmia.jpeg" alt="Imagen" class="Imagen left">
+        <img src="imagenmia.jpeg" alt="Imagen" class="Imagen right">
+    </div>
+    
+
+    <header>
+        <div class = "container">
+            <p class="logo">Martin Contreras <br> Personal Page</p>
+        </div>
+    </header>
+    <h1>Summary</h1>
+    <section id = "text">
+        
+        <div class = "container">
+        <p class = "Summary">
+            Hi my name is Martin Contreras, and I’m 21 years old. I am currently in my 4th year of studies at the University of Los Andes, majoring in Computer Science. I have a strong passion for programming and enjoy solving problems through code, even if its hard for me sometimes. In addition to tech, I love sports and going to the gym, as staying active is an important part of my daily routine. Looking ahead, one of my biggest goals is to work abroad, gaining experience in international environments and growing both personally and professionally.
+        </p>
+        <p class="link">
+            My Github link is <span></span><a href=https://github.com/Martin-Contreras-labs/Martin-Contreras-lab.github.io>https://github.com/Martin-Contreras-labs/Martin-Contreras-lab.github.io</a>
+        </p>
+        </div>
+        <div class = image-container>
+            
+        </div>
+
+    </section>
+
+    <section>
+        <h1>Personal Skills</h1>
+        <table>
+            <tr>
+                <th>Skills</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Python</td> 
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Java</td> 
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td> 
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Github</td> 
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>C</td> 
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>C ++</td> 
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Client Service</td> 
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td>Cooking</td> 
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td>English</td> 
+                <td>Advance</td>
+            </tr>
+            <tr>
+                <td>Spanish</td>
+                <td>Native</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <section class="interactive">
+        <h1>
+            Change the Message
+        </h1>
+        <input type="text" id="userInput" placeholder="Put something here">
+        <button onclick="changeText()">Change</button>
+        <p id="dynamicText">This text changes</p>
+    </section>
+
+    <script>
+        function changeText() {
+            let newText = document.getElementById("userInput").value;
+            if (newText.trim() !== "") {
+                document.getElementById("dynamicText").textContent = newText;
+            } else {
+                alert("Please enter some text");
+            }
+        }
+    </script>
+
+</body>
+</html>
