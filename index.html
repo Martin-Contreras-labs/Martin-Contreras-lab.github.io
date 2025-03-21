@@ -5,21 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Personal Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="imagenes">
-        <img src="imagenmia.jpeg" alt="Imagen" class="Imagen left">
-        <img src="imagenmia.jpeg" alt="Imagen" class="Imagen right">
-    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Martin Contreras</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link " href="#summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#interactive">Interactive</a></li>
+                    <li class="nav-item"><a class="nav-link " href="#news">News</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     
 
-    <header>
-        <div class = "container">
-            <p class="logo">Martin Contreras <br> Personal Page</p>
-        </div>
-    </header>
+
     <h1>Summary</h1>
     <section id = "text">
         
@@ -28,64 +38,79 @@
             Hi my name is Martin Contreras, and I’m 21 years old. I am currently in my 4th year of studies at the University of Los Andes, majoring in Computer Science. I have a strong passion for programming and enjoy solving problems through code, even if its hard for me sometimes. In addition to tech, I love sports and going to the gym, as staying active is an important part of my daily routine. Looking ahead, one of my biggest goals is to work abroad, gaining experience in international environments and growing both personally and professionally.
         </p>
         <p class="link">
-            My Github link is <span></span><a href=https://github.com/Martin-Contreras-labs/Martin-Contreras-lab.github.io>https://github.com/Martin-Contreras-labs/Martin-Contreras-lab.github.io</a>
+            My Github link is <span></span><a href=https://github.com/Martin-Contreras-labs/Martin-Contreras-lab.github.io>Repository Github Link</a>
         </p>
-        </div>
-        <div class = image-container>
-            
         </div>
 
     </section>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 d-none d-md-block">
+                <img src="imagenmia.jpeg" alt="Imagen" class="Imagen">
+            </div>
+    
+            <div class="col-md-8 text-center">
+                <h1>Personal Skills</h1>
+                <table class="table table-striped">
+                    <table>
+                    <tr>
+                        <th>Skills</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td> 
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td> 
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>HTML/CSS</td> 
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Github</td> 
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>C</td> 
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>C ++</td> 
+                        <td>Basic</td>
+                    </tr>
+                    <tr>
+                        <td>Client Service</td> 
+                        <td>Advance</td>
+                    </tr>
+                    <tr>
+                        <td>Cooking</td> 
+                        <td>Advance</td>
+                    </tr>
+                    <tr>
+                        <td>English</td> 
+                        <td>Advance</td>
+                    </tr>
+                    <tr>
+                        <td>Spanish</td>
+                        <td>Native</td>
+                    </tr>
+        
+                </table>
+            </div>
+    
+            <div class="col-md-2 d-none d-md-block">
+                <img src="imagenmia.jpeg" alt="Imagen" class="Imagen">
+            </div>
+        </div>
+    </div>
+
     <section>
         <h1>Personal Skills</h1>
-        <table>
-            <tr>
-                <th>Skills</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>Python</td> 
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Java</td> 
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td> 
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Github</td> 
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>C</td> 
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>C ++</td> 
-                <td>Basic</td>
-            </tr>
-            <tr>
-                <td>Client Service</td> 
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td>Cooking</td> 
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td>English</td> 
-                <td>Advance</td>
-            </tr>
-            <tr>
-                <td>Spanish</td>
-                <td>Native</td>
-            </tr>
 
-        </table>
 
     </section>
 
@@ -110,5 +135,12 @@
         }
     </script>
 
+    <section id="news" class="mt-4">
+        <h1>Latest News</h1>
+        <div class="row" id="news-container"></div>
+    </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
